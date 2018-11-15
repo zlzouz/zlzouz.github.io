@@ -229,6 +229,126 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/15/flask1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/15/flask1/" itemprop="url">flask1</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-15T12:56:01+08:00">
+                2018-11-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>课时40.上下文处理器钩子函数<br>2.context_processor:上下文处理器。<br>(1)新建一个index.html和edit.html<br>在<body>标签内分别添加<br>(2).在主文件中的主函数处渲染一下模板:<br>@app.route(‘/‘)<br>def hello_world():<br>print ‘index’<br>return render_template(‘index.html’, username=’zhiliao’)<br>3.在主文件的edit函数处渲染模板:<br>@app.route(‘/edit/‘)<br>return render_template(‘edit.html’,username = ‘zhiliao’ )<br>4.在before_request函数处也要渲染:<br>@app.before_request<br>def my_before_request():<br>if session.get(‘username’):<br>g.username = session.get(‘username’, username=’zhiliao’)<br>5.运行，保存，在主文件和访问地址为edit文件都显示:zhiliao<br><img src="https://i.imgur.com/4x4ISBJ.png" alt=""><br><img src="https://i.imgur.com/gUmWJse.png" alt=""><br>6.主文件的主函数、edit函数、before_request处都需要一个username=‘zhiliao’，但当网站比较大，视图函数多，时，不符合‘不重复’原则，context_processor可解决该问题。<br>7.写法与before_request处理器相似，<br>@app.context_processor<br>def my_context_processor():<br>return {‘username’:username}  #只要在context_processor函数中返回了该字典，那么在所有模板中都会把该key当做变量来渲染。<br>8.把主文件的主函数、edit函数中的username=‘zhiliao’删除，保存，运行，主页面和edit页面都会显示:zhiliao<br><img src="https://i.imgur.com/VwEq00F.png" alt=""><br><img src="https://i.imgur.com/nmAPFls.png" alt=""><br>9.总结:<br>上下文处理器应该返回一个字典，字典中的‘key’会被模板中当成变量来渲染。<br>上下文处理器中返回的字典，在所有页面中都是可用的。</body></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/14/pythonflask/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -382,7 +502,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -390,6 +510,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
