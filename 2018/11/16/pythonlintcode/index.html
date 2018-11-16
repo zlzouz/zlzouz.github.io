@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="笔记一些知识点">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-16T09:50:38.922Z">
+<meta property="og:updated_time" content="2018-11-16T09:54:51.806Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pythonlintcode">
 <meta name="twitter:description" content="笔记一些知识点">
@@ -168,55 +168,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>笔记一些知识点<br><a id="more"></a><br>1.python enumerate()函数:用于将一个可遍历的数据对象(如列表、元组、或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在for循环中。<br>语法:enumerate(sequence, [start=0])<br>参数:sequence:一个序列、迭代器或其他支持迭代对象。<br>start:下标起始位置<br>返回值:返回enumerate(枚举)对象。</p>
-<p>2.lambda表达式用法:匿名函数，生成函数对象的表达式形式，这个表达式创建了一个之后能够调用的函数，但是返回了一个函数而不是将这个函数赋值给一个变量名。<br>lambda argument1, argument2, … argumentN : expression using argument<br>  (1)lambda是一个表达式，而不是一个语句。<br>  (2)lambda的主体是一个单个的表达式，而不是一个代码块<br>题:<br>合并区间<br>给出若干闭合区间，合并所有重叠的部分。<br>样例<br>Given intervals =&gt; merged intervals:<br>[                     [<br>  (1, 3),               (1, 6),<br>  (2, 6),      =&gt;       (8, 10),<br>  (8, 10),              (15, 18)<br>  (15, 18)            ]<br>]<br>代码:<br>class Solution:<br>    “””<br>    @param intervals: interval list.<br>    @return: A new interval list.<br>    “””<br>    def merge(self, intervals):</p>
-<h1 id="write-your-code-here"><a href="#write-your-code-here" class="headerlink" title="write your code here"></a>write your code here</h1><pre><code>    if len(intervals) &lt; 2:
-        return intervals
-    intervals = sorted(intervals, key = lambda x: x.start)
-    i = 1 
-    k = 0
-    res = [intervals[0]]
-    while i &lt; len(intervals):
-        if res[k].end &gt;= intervals[i].start:
-            res[k] = Interval(res[k].start, res[k].end if res[k].end &gt; intervals[i].end else intervals[i].end)
-        else:
-            res.append(intervals[i])
-            k += 1 
-        i += 1 
-    return res 
-</code></pre><p>3.Python 判断字符属于数字、字母、空格的方法：<br>字符 c.isalpha()<br>空格 c.isspace()<br>数字 c.isdigit()</p>
-<p>4.链表求和<br>你有两个用链表代表的整数，其中每个节点包含一个数字。数字存储按照在原来整数中相反的顺序，使得第一个数字位于链表的开头。写出一个函数将两个整数相加，用链表形式返回和。<br>样例<br>给出两个链表 3-&gt;1-&gt;5-&gt;null 和 5-&gt;9-&gt;2-&gt;null，返回 8-&gt;0-&gt;8-&gt;null<br>python中新建一个链表中的节点并赋值为x:node = ListNode(x)<br>class Solution:<br>    “””<br>    @param l1: the first list<br>    @param l2: the second list<br>    @return: the sum list of l1 and l2<br>    “””<br>    def addLists(self, l1, l2):</p>
-<h1 id="write-your-code-here-1"><a href="#write-your-code-here-1" class="headerlink" title="write your code here"></a>write your code here</h1><pre><code>    if l1 == None:
-        return l2
-    if l2 == None:
-        return l1
-    dummy = ListNode(0)
-    current = dummy
-    carry = 0
-    while l1 != None and l2 != None:
-        dig = l1.val + l2.val + carry
-        val = dig % 10
-        carry = dig // 10
-        newnode = ListNode(val)
-        current.next = newnode
-        current = current.next
-        l1 = l1.next
-        l2 = l2.next
-    while l1 != None:
-        val = (l1.val + carry) % 10
-        carry = (l1.val + carry) // 10
-        current.next = ListNode(val)
-        current = current.next
-        l1 = l1.next
-    while l2 != None:
-        val = (l2.val + carry) % 10
-        carry = (l2.val + carry) // 10
-        current.next = ListNode(val)
-        current = current.next
-        l2 = l2.next
-    if carry != 0:
-        current.next = ListNode(carry)
-    return dummy.next
-</code></pre><p>5.</p>
+<p>2.lambda表达式用法:匿名函数，生成函数对象的表达式形式，这个表达式创建了一个之后能够调用的函数，但是返回了一个函数而不是将这个函数赋值给一个变量名。<br>lambda argument1, argument2, … argumentN : expression using argument<br>  (1)lambda是一个表达式，而不是一个语句。<br>  (2)lambda的主体是一个单个的表达式，而不是一个代码块<br>题:<br>合并区间<br>给出若干闭合区间，合并所有重叠的部分。<br>样例<br>Given intervals =&gt; merged intervals:<br>[                     [<br>  (1, 3),               (1, 6),<br>  (2, 6),      =&gt;       (8, 10),<br>  (8, 10),              (15, 18)<br>  (15, 18)            ]<br>]<br>代码:<br>#<br>    class Solution:<br>        “””<br>        @param intervals: interval list.<br>        @return: A new interval list.<br>        “””<br>        def merge(self, intervals):<br>            if len(intervals) &lt; 2:<br>                return intervals<br>            intervals = sorted(intervals, key = lambda x: x.start)<br>            i = 1<br>            k = 0<br>            res = [intervals[0]]<br>            while i &lt; len(intervals):<br>                if res[k].end &gt;= intervals[i].start:<br>                    res[k] = Interval(res[k].start, res[k].end if res[k].end &gt; intervals[i].end else intervals[i].end)<br>                else:<br>                    res.append(intervals[i])<br>                    k += 1<br>                i += 1<br>            return res </p>
+<p>3.Python 判断字符属于数字、字母、空格的方法：<br>字符 c.isalpha()<br>空格 c.isspace()<br>数字 c.isdigit()</p>
+<p>4.链表求和<br>你有两个用链表代表的整数，其中每个节点包含一个数字。数字存储按照在原来整数中相反的顺序，使得第一个数字位于链表的开头。写出一个函数将两个整数相加，用链表形式返回和。<br>样例<br>给出两个链表 3-&gt;1-&gt;5-&gt;null 和 5-&gt;9-&gt;2-&gt;null，返回 8-&gt;0-&gt;8-&gt;null<br>python中新建一个链表中的节点并赋值为x:node = ListNode(x)<br>#<br>    class Solution:<br>        “””<br>        @param l1: the first list<br>        @param l2: the second list<br>        @return: the sum list of l1 and l2<br>        “””<br>        def addLists(self, l1, l2):<br>            if l1 == None:<br>                return l2<br>            if l2 == None:<br>                return l1<br>            dummy = ListNode(0)<br>            current = dummy<br>            carry = 0<br>            while l1 != None and l2 != None:<br>                dig = l1.val + l2.val + carry<br>                val = dig % 10<br>                carry = dig // 10<br>                newnode = ListNode(val)<br>                current.next = newnode<br>                current = current.next<br>                l1 = l1.next<br>                l2 = l2.next<br>            while l1 != None:<br>                val = (l1.val + carry) % 10<br>                carry = (l1.val + carry) // 10<br>                current.next = ListNode(val)<br>                current = current.next<br>                l1 = l1.next<br>            while l2 != None:<br>                val = (l2.val + carry) % 10<br>                carry = (l2.val + carry) // 10<br>                current.next = ListNode(val)<br>                current = current.next<br>                l2 = l2.next<br>            if carry != 0:<br>                current.next = ListNode(carry)<br>            return dummy.next<br>5.</p>
 
       
 
