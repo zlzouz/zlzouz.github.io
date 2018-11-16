@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>flaskproject1116 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置:# # encoding: utf-8 import os  DEBUG = True  SECRET_KEY = os.urandom(24)  HOSTNAME = &amp;#39;127.0.0.1&amp;#39; PORT">
+  <meta name="description" content="项目实战1">
 <meta name="keywords" content="flask">
 <meta property="og:type" content="article">
 <meta property="og:title" content="flaskproject1116">
 <meta property="og:url" content="http://yoursite.com/2018/11/16/flaskproject1116/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置:# # encoding: utf-8 import os  DEBUG = True  SECRET_KEY = os.urandom(24)  HOSTNAME = &amp;#39;127.0.0.1&amp;#39; PORT">
+<meta property="og:description" content="项目实战1">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.imgur.com/rMVhqOI.png">
 <meta property="og:image" content="https://i.imgur.com/JawX4pc.png">
-<meta property="og:updated_time" content="2018-11-16T09:54:53.831Z">
+<meta property="og:updated_time" content="2018-11-16T10:15:25.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flaskproject1116">
-<meta name="twitter:description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置:# # encoding: utf-8 import os  DEBUG = True  SECRET_KEY = os.urandom(24)  HOSTNAME = &amp;#39;127.0.0.1&amp;#39; PORT">
+<meta name="twitter:description" content="项目实战1">
 <meta name="twitter:image" content="https://i.imgur.com/rMVhqOI.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -170,7 +170,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>项目实战1<br>一.项目结构搭建<br>1.新建一个flask项目:<br><img src="https://i.imgur.com/rMVhqOI.png" alt=""><br>2.在MYSQL数据库中新建一个数据库fzlkt:<br><img src="https://i.imgur.com/JawX4pc.png" alt=""><br>3.在flask项目主目录下添加配置文件config.py,并进行相关配置:<br>#</p>
+        <p>项目实战1<br><a id="more"></a><br>一.项目结构搭建<br>1.新建一个flask项目:<br><img src="https://i.imgur.com/rMVhqOI.png" alt=""><br>2.在MYSQL数据库中新建一个数据库fzlkt:<br><img src="https://i.imgur.com/JawX4pc.png" alt=""><br>3.在flask项目主目录下添加配置文件config.py,并进行相关配置:<br>#</p>
 <pre><code># encoding: utf-8
 import os
 
@@ -185,6 +185,34 @@ USERNAME = &#39;root&#39;
 PASSWORD = &#39;password&#39;
 DB_URI = &#39;mysql+mysqldb://{}:{}@{}:{}/{}?charset=utf8&#39;.format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
 SQLALCHEMY_DATABASE_URI = DB_URI
+</code></pre><p>4.在flask项目主目录下添加exts.py，存放数据库相关。添加:<br>#</p>
+<pre><code># encoding: uts-8
+
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
+</code></pre><p>5.在flask项目主目录下添加models.py,存放所有的模型。添加:<br>#</p>
+<pre><code># encoding: utf-8
+
+from exts import db
+</code></pre><p>再使用db来定义一些模型，比如说:用户、问答、答案之类，后续会用到。<br>6.在flask项目主目录下添加manager.py文件，专门写命令。<br>#</p>
+<pre><code># encoding: utf-8
+
+from flask_script import Manager
+from flask_migrate import Migrate,MigrateCommand
+from project import app #导入项目的app
+from exts import db
+
+manager = Manager(app)
+
+# 使用Migrate来绑定app和db
+migrate = Migrate(app, db)
+
+# 添加迁移脚本的命令到manager中，把所有的子命令绑定到db上
+manager.add.command(&#39;db&#39;, MigrateCommand)
+
+if __name__ == &quot;__main__&quot;:
+    manager.run()
 </code></pre>
       
 
