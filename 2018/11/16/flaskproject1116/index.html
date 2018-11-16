@@ -8,14 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>flaskproject1116 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置: write your code here    # encoding: utf-8     import os      DEBUG = True      SECRET_KEY = os.urandom(24)">
+<meta name="keywords" content="flask">
+<meta property="og:type" content="article">
 <meta property="og:title" content="flaskproject1116">
 <meta property="og:url" content="http://yoursite.com/2018/11/16/flaskproject1116/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置: write your code here    # encoding: utf-8     import os      DEBUG = True      SECRET_KEY = os.urandom(24)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-16T08:42:16.257Z">
+<meta property="og:image" content="https://i.imgur.com/rMVhqOI.png">
+<meta property="og:image" content="https://i.imgur.com/JawX4pc.png">
+<meta property="og:updated_time" content="2018-11-16T09:50:36.410Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flaskproject1116">
+<meta name="twitter:description" content="项目实战1一.项目结构搭建1.新建一个flask项目:2.在MYSQL数据库中新建一个数据库fzlkt:3.在flask项目主目录下添加配置文件config.py,并进行相关配置: write your code here    # encoding: utf-8     import os      DEBUG = True      SECRET_KEY = os.urandom(24)">
+<meta name="twitter:image" content="https://i.imgur.com/rMVhqOI.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -163,7 +170,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>项目实战1<br>一.项目结构搭建<br>1.新建一个flask项目:<br><img src="https://i.imgur.com/rMVhqOI.png" alt=""><br>2.在MYSQL数据库中新建一个数据库fzlkt:<br><img src="https://i.imgur.com/JawX4pc.png" alt=""><br>3.在flask项目主目录下添加配置文件config.py,并进行相关配置:</p>
+<h1 id="write-your-code-here"><a href="#write-your-code-here" class="headerlink" title="write your code here"></a>write your code here</h1><pre><code>    # encoding: utf-8
+    import os
+
+    DEBUG = True
+
+    SECRET_KEY = os.urandom(24)
+
+    HOSTNAME = &#39;127.0.0.1&#39;
+    PORT = &#39;3306&#39;
+    DATABASE = &#39;falkt&#39;
+    USERNAME = &#39;root&#39;
+    PASSWORD = &#39;password&#39;
+    DB_URI = &#39;mysql+mysqldb://{}:{}@{}:{}/{}?charset=utf8&#39;.format(USERNAME, PASSWORD, HOSTNAME, PORT, DATABASE)
+    SQLALCHEMY_DATABASE_URI = DB_URI
+</code></pre>
       
 
       
@@ -171,6 +193,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
