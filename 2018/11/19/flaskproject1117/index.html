@@ -6,15 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | Hexo</title>
+  <title>flaskproject1117 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="项目实战 二.导航条完成">
+<meta name="keywords" content="flask">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flaskproject1117">
+<meta property="og:url" content="http://yoursite.com/2018/11/19/flaskproject1117/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="项目实战 二.导航条完成">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
+<meta property="og:image" content="https://i.imgur.com/PakZURo.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
+<meta property="og:image" content="https://i.imgur.com/BRryk2x.png">
+<meta property="og:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
+<meta property="og:updated_time" content="2018-11-19T08:18:13.134Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="flaskproject1117">
+<meta name="twitter:description" content="项目实战 二.导航条完成">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -142,36 +153,128 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-flaskproject1117" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      flaskproject1117
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/19/flaskproject1117/" class="archive-article-date">
+
+        
+        <a href="/2018/11/19/flaskproject1117/" class="archive-article-date">
   	<time datetime="2018-11-19T08:04:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/19/flaskproject1117/">flaskproject1117</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>项目实战</p>
+<p>二.导航条完成<br><a id="more"></a><br>1.在template文件夹下新建一个index.html文件，修改并添加代码。</p>
+<p>2.在static静态文件夹下选择:show in Explorer打开路径，在static文件夹下新建一个images文件夹，用来存放所有图片。</p>
+<p>3.页面使用的UI框架为:bootstrap.打开该框架的国内网站:http: //<a href="http://www.bootcss.com/,用bootstrap找页面中导航栏所需要的。点击上方的&#39;bootstrap3中文文档&#39;-&#39;起步&#39;,看如何使用。下面是准备工作" target="_blank" rel="noopener">www.bootcss.com/,用bootstrap找页面中导航栏所需要的。点击上方的&#39;bootstrap3中文文档&#39;-&#39;起步&#39;,看如何使用。下面是准备工作</a>:<br>(1)复制:使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）下的  最新版本的 Bootstrap 核心 CSS 文件 内容:<br>#<br>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>到index.html的<head><meta name="generator" content="Hexo 3.8.0">标签内<br>(2)复制:使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）下的 最新的 Bootstrap 核心 JavaScript 文件 内容:<br>#<br>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>到index.html的<head><meta name="generator" content="Hexo 3.8.0">标签内<br>(3)但因为(2)的该JS文件依赖于jquery，所以需要在index文件引入之前导入jquery。<br>(4)搜索:bootstrap cdn静态库或https: //<a href="http://www.bootcdn.cn/，跳出来页面的搜索框输入:jquery，选中第一个，点击，:版本3.2.1，复制第三个:https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js。到index.html文件需导入的位置。" target="_blank" rel="noopener">www.bootcdn.cn/，跳出来页面的搜索框输入:jquery，选中第一个，点击，:版本3.2.1，复制第三个:https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js。到index.html文件需导入的位置。</a><br>(5)完成了使用bootstrap的初始化。</head></head></p>
+<p>4.如何使用bootstrap生成一个导航栏。<br>(1)点击:组件,选中点击右边的:导航条。发现’实例’中的导航条模型就是我们需要的，复制代码到index.html的<body>标签下。<br>(2)修改代码中对应的变量:Brand-&gt;改成自己的logo，可使用图片标签进行修改。</body></p>
+<p>5.此时主文件代码:<br>#</p>
+<pre><code># encoding: utf-8
+from flask import Flask, render_template
+import config
 
-        <div class="article-info info-on-right">
-          
+app = Flask(__name__)
+app.config.from_object(config)
+
+
+@app.route(&#39;/&#39;)
+def hello_world():
+    return render_template(&#39;index.html&#39;)
+
+
+if __name__ == &#39;__main__&#39;:
+    app.run()
+</code></pre><p>6.index.html代码:<br>#<br>    &lt;!DOCTYPE html&gt;<br>    <html lang="en"><br>    <head><meta name="generator" content="Hexo 3.8.0"><br>        <meta charset="UTF-8"><br>        <title>首页-知了课堂问答平台</title><br>        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><br>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><br>    </head><br>    <body><br>        <nav class="navbar navbar-default"><br>            <div class="container-fluid"><br>                <!-- Brand and toggle get grouped for better mobile display --><br>                <div class="navbar-header"><br>                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><br>                        <span class="sr-only">Toggle navigation</span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                    </button><br>                    <a class="navbar-brand" href="#"><br>                        <img src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>                    </a><br>                </div></div></nav></body></html></p>
+<pre><code>            &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+            &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+                &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;
+                           aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;One more separated link&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+                &lt;/form&gt;
+                &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class=&quot;dropdown&quot;&gt;
+                        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+                            &lt;li role=&quot;separator&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+        &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>7.初步展示效果:<br><img src="https://i.imgur.com/PakZURo.png" alt=""></p>
+<p>8.修改图片大小。<br>(1)在static文件夹下新建一个目录directory:css，专门用来存放css文件。<br>(2)在css下新建一个Stylesheet文件:index.css<br>(3)在index.html文件的插入图片的代码位子加入:class=”logo”，之后该位置的代码为:<br>#<br>        <img class="logo" src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>(4)回到index.css文件，根据’logo’索引对图片大小进行设置:</p>
+<pre><code>.logo{
+width:100px
+</code></pre><p>}<br>(5)在index.html文件的<head><meta name="generator" content="Hexo 3.8.0">标签中引用css文件:<br>#<br>        <link rel="stylesheet" href="双大括号 url_for('static',filename='css/index.css')双大括号"> </head></p>
+<p>9.修改导航条内容:<br>(1)在index.html文件内，找到导航条内容对应的代码段，修改为自己需要的内容。<br>(2)第一个’Link’-&gt;’首页’:因为有class=’active’，表示当前选中的东西。<br>(3)第二个’Link’-&gt;’发布问答’。<br>(4)删除不需要的包含’dropdown’的标签。<br>(5)placeholder标签的’Search’-&gt;’请输入关键字’。<br>(6)button标签的’submit’-&gt;’查找’。<br>(7)navbar-right 表示放到导航条右边的东西，故第一个’Link’-&gt;’登录’。<br>(8)删除li class=”dropdown”标签所有内容，添加:<br>#<br>    <li><a href="#">注册</a></li>。</p>
+<p>10.展示:<br><img src="https://i.imgur.com/BRryk2x.png" alt=""></p>
+<p>11.代码:<br>(1)index.css:<br>#<br>    .logo{<br>    width: 100px;<br>    }<br>(2)index.html:<br>#<br>    &lt;!DOCTYPE html&gt;<br>    <html lang="en"><br>    <head><meta name="generator" content="Hexo 3.8.0"><br>        <meta charset="UTF-8"><br>        <title>首页-知了课堂问答平台</title><br>        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><br>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><br>               <link rel="stylesheet" href="双大括号 url_for('static',filename='css/index.css') 双大括号"> <br>    </head><br>    <body><br>        <nav class="navbar navbar-default"><br>            <div class="container"><br>                <!-- Brand and toggle get grouped for better mobile display --><br>                <div class="navbar-header"><br>                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><br>                        <span class="sr-only">Toggle navigation</span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                    </button><br>                    <a class="navbar-brand" href="#"><br>                            <img class="logo" src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>                    </a><br>                </div></div></nav><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html></p>
+<pre><code>            &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+            &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
+                &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;首页 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;发布问答&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
+                    &lt;div class=&quot;form-group&quot;&gt;
+                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;请输入关键字&quot;&gt;
+                    &lt;/div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;查找&lt;/button&gt;
+                &lt;/form&gt;
+                &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;登录&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;注册&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+        &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -183,198 +286,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/11/19/flaskproject1117/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/19/Fflask11/" class="archive-article-date">
-  	<time datetime="2018-11-19T08:01:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-19</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/11/19/Fflask11/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Fflask11</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/19/Fflask11/">Fflask11</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/16/flaskproject1116/" class="archive-article-date">
-  	<time datetime="2018-11-16T08:42:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/16/flaskproject1116/">flaskproject1116</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/16/pythonlintcode/" class="archive-article-date">
-  	<time datetime="2018-11-16T07:56:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/16/pythonlintcode/">pythonlintcode</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">lintcode</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/15/flask1/" class="archive-article-date">
-  	<time datetime="2018-11-15T04:56:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/15/flask1/">flask1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">flask</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/14/pythonflask/" class="archive-article-date">
-  	<time datetime="2018-11-14T10:28:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/14/pythonflask/">pythonflask</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -397,8 +408,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
