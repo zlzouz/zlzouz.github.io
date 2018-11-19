@@ -20,8 +20,7 @@
 <meta property="og:image" content="https://i.imgur.com/PakZURo.png">
 <meta property="og:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
 <meta property="og:image" content="https://i.imgur.com/BRryk2x.png">
-<meta property="og:image" content="http://yoursite.com/2018/11/19/flaskproject1117/双大括号%20url_for(%27static%27,filename=%27images/logo.png%20%27)双大括号">
-<meta property="og:updated_time" content="2018-11-19T09:52:36.472Z">
+<meta property="og:updated_time" content="2018-11-19T10:01:40.088Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="flaskproject1117">
 <meta name="twitter:description" content="项目实战 二.导航条完成">
@@ -174,7 +173,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>项目实战</p>
-<p>二.导航条完成<br><a id="more"></a><br>1.2在template文件夹下新建一个index.html文件，修改并添加代码。</p>
+<p>二.导航条完成<br><a id="more"></a><br>1.在template文件夹下新建一个index.html文件，修改并添加代码。</p>
 <p>2.在static静态文件夹下选择:show in Explorer打开路径，在static文件夹下新建一个images文件夹，用来存放所有图片。</p>
 <p>3.页面使用的UI框架为:bootstrap.打开该框架的国内网站:<a href="http://www.bootcss.com/" target="_blank" rel="noopener">http://www.bootcss.com/</a> ,用bootstrap找页面中导航栏所需要的。点击上方的’bootstrap3中文文档’-‘起步’,看如何使用。下面是准备工作:<br>(1)复制:使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）下的  最新版本的 Bootstrap 核心 CSS 文件 内容:<br>#<br>    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></p>
 <p>到index.html的head标签内<br>(2)复制:使用 BootCDN 提供的免费 CDN 加速服务（同时支持 http 和 https 协议）下的 最新的 Bootstrap 核心 JavaScript 文件 内容:<br>#<br>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></p>
@@ -196,7 +195,7 @@ def hello_world():
 
 if __name__ == &#39;__main__&#39;:
     app.run()
-</code></pre><p>6.index.html代码:<br>#<br>    &lt;!DOCTYPE html&gt;<br>    <html lang="en"><br>    <head><meta name="generator" content="Hexo 3.8.0"><br>        <meta charset="UTF-8"><br>        <title>首页-知了课堂问答平台</title><br>        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><br>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><br>    </head><br>    <body><br>        <nav class="navbar navbar-default"><br>            <div class="container-fluid"><br>                <!-- Brand and toggle get grouped for better mobile display --><br>                <div class="navbar-header"><br>                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><br>                        <span class="sr-only">Toggle navigation</span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                    </button><br>                    <a class="navbar-brand" href="#"><br>                        <img src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>                    </a><br>                </div></div></nav></body></html></p>
+</code></pre><p>6.index.html代码:<br>#<br>    &lt;!DOCTYPE html&gt;<br>    <html lang="en"><br>    <head><meta name="generator" content="Hexo 3.8.0"><br>        <meta charset="UTF-8"><br>        <title>首页-知了课堂问答平台</title><br>        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><br>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><br>    </head><br>    <body><br>        <nav class="navbar navbar-default"><br>            <div class="container-fluid"><br>                <!-- Brand and toggle get grouped for better mobile display --><br>                <div class="navbar-header"><br>                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><br>                        <span class="sr-only">Toggle navigation</span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                    </button><br>                    <a class="navbar-brand" href="#"><br>                        <img src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>                    </a><br>                </div></div></nav><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html></p>
 <pre><code>            &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
             &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
                 &lt;ul class=&quot;nav navbar-nav&quot;&gt;
@@ -247,29 +246,59 @@ width:100px
 </code></pre><p>}<br>(5)在index.html文件的head标签中引用css文件:<br>#<br>        <link rel="stylesheet" href="双大括号 url_for('static',filename='css/index.css')双大括号"> </p>
 <p>9.修改导航条内容:<br>(1)在index.html文件内，找到导航条内容对应的代码段，修改为自己需要的内容。<br>(2)第一个’Link’-&gt;’首页’:因为有class=’active’，表示当前选中的东西。<br>(3)第二个’Link’-&gt;’发布问答’。<br>(4)删除不需要的包含’dropdown’的标签。<br>(5)placeholder标签的’Search’-&gt;’请输入关键字’。<br>(6)button标签的’submit’-&gt;’查找’。<br>(7)navbar-right 表示放到导航条右边的东西，故第一个’Link’-&gt;’登录’。<br>(8)删除li class=”dropdown”标签所有内容，添加:<br>#<br>    <li><a href="#">注册</a></li>。</p>
 <p>10.展示:<br><img src="https://i.imgur.com/BRryk2x.png" alt=""></p>
-<p>11.代码:<br>(1)index.css:<br>#<br>    .logo{<br>    width: 100px;<br>    }<br>(2)index.html:<br>#<br>    &lt;!DOCTYPE html&gt;<br>    <html lang="en"><br>    <head><meta name="generator" content="Hexo 3.8.0"><br>        <meta charset="UTF-8"><br>        <title>首页-知了课堂问答平台</title><br>        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity=" sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><br>        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><br>        <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><br>               <link rel="stylesheet" href="双大括号 url_for('static',filename='css/index.css') 双大括号"> <br>    </head><br>    <body><br>        <nav class="navbar navbar-default"><br>            <div class="container"><br>                <!-- Brand and toggle get grouped for better mobile display --><br>                <div class="navbar-header"><br>                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><br>                        <span class="sr-only">Toggle navigation</span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                        <span class="icon-bar"></span><br>                    </button><br>                    <a class="navbar-brand" href="#"><br>                            <img class="logo" src="双大括号 url_for('static',filename='images/logo.png ')双大括号" alt=""><br>                    </a><br>                </div></div></nav><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/nico.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body></html></p>
-<pre><code>            &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+<p>11.代码:<br>(1)index.css:<br>#<br>    .logo{<br>    width: 100px;<br>    }<br>(2)index.html:<br><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;首页-知了课堂问答平台&lt;&#x2F;title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;bootstrap@3.3.7&#x2F;dist&#x2F;css&#x2F;bootstrap.min.css&quot;
+          integrity=&quot; sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz&#x2F;K68vbdEjh4u&quot;
+          crossorigin=&quot;anonymous&quot;&gt;
+    &lt;script src=&quot;https:&#x2F;&#x2F;cdn.bootcss.com&#x2F;jquery&#x2F;3.2.1&#x2F;jquery.min.js&quot;&gt;&lt;&#x2F;script&gt;
+    &lt;script src=&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;bootstrap@3.3.7&#x2F;dist&#x2F;js&#x2F;bootstrap.min.js&quot;
+            integrity=&quot;sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa&quot;
+            crossorigin=&quot;anonymous&quot;&gt;&lt;&#x2F;script&gt;
+   		&lt;link rel=&quot;stylesheet&quot; href=&quot;双大括号 url_for(&#39;static&#39;,filename=&#39;css&#x2F;index.css&#39;) 双大括号&quot;&gt; &lt;&#x2F;link&gt;
+&lt;&#x2F;head&gt;
+&lt;body&gt;
+    &lt;nav class=&quot;navbar navbar-default&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+            &lt;div class=&quot;navbar-header&quot;&gt;
+                &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot;
+                        data-target=&quot;#bs-example-navbar-collapse-1&quot; aria-expanded=&quot;false&quot;&gt;
+                    &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;&#x2F;span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+                    &lt;span class=&quot;icon-bar&quot;&gt;&lt;&#x2F;span&gt;
+                &lt;&#x2F;button&gt;
+                &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;
+                    	&lt;img class=&quot;logo&quot; src=&quot;双大括号 url_for(&#39;static&#39;,filename=&#39;images&#x2F;logo.png &#39;)双大括号&quot; alt=&quot;&quot;&gt;
+                &lt;&#x2F;a&gt;
+            &lt;&#x2F;div&gt;
+
+            &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
             &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;bs-example-navbar-collapse-1&quot;&gt;
                 &lt;ul class=&quot;nav navbar-nav&quot;&gt;
-                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;首页 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;发布问答&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
+                    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;首页 &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;&#x2F;span&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;发布问答&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+                &lt;&#x2F;ul&gt;
                 &lt;form class=&quot;navbar-form navbar-left&quot;&gt;
                     &lt;div class=&quot;form-group&quot;&gt;
                         &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;请输入关键字&quot;&gt;
-                    &lt;/div&gt;
-                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;查找&lt;/button&gt;
-                &lt;/form&gt;
+                    &lt;&#x2F;div&gt;
+                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;查找&lt;&#x2F;button&gt;
+                &lt;&#x2F;form&gt;
                 &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;
-                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;登录&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;注册&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
-        &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
-    &lt;/nav&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;登录&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;注册&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+                &lt;&#x2F;ul&gt;
+            &lt;&#x2F;div&gt;&lt;!-- &#x2F;.navbar-collapse --&gt;
+        &lt;&#x2F;div&gt;&lt;!-- &#x2F;.container-fluid --&gt;
+    &lt;&#x2F;nav&gt;
+&lt;&#x2F;body&gt;
+&lt;&#x2F;html&gt;</code></pre></p>
+
       
 
       
